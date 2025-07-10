@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const ShimmerMeassages = () => {
+const ShimmerMessages = () => {
   const messages = [
     "Thinking...",
     "Loading...",
@@ -45,7 +45,7 @@ export const MessageLoading = () => {
         <span className="text-sm font-medium">Kryft</span>
       </div>
       <div className="pl-8.5 flex flex-col gap-y-4">
-        <ShimmerMeassages />
+        <ShimmerMessages />
       </div>
     </div>
   );

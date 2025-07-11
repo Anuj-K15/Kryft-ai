@@ -23,7 +23,7 @@ export const MessagesContainer = ({ projectId, activeFragment, setActiveFragment
       projectId: projectId,
     },{
       // Temporary live 
-      refetchInterval: 5000,
+      refetchInterval: 3000,
     })
   );
 

@@ -64,17 +64,18 @@ const FileBreadcrumb = ({ filePath }: FileBreadcrumbProps) => {
         <>
           <BreadcrumbItem>
             <span className="text-muted-foreground">{firstSegment}</span>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbEllipsis />
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage className="font-medium">
-                {lastSegment}
-              </BreadcrumbPage>
-            </BreadcrumbItem>
+          </BreadcrumbItem> {/* Added this line */}
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbEllipsis />
           </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage className="font-medium">
+              {lastSegment}
+            </BreadcrumbPage>
+          </BreadcrumbItem>
+          {/* Removed </BreadcrumbItem> */}
         </>
       );
     }

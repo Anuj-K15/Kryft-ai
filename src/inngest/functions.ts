@@ -205,6 +205,8 @@ export const codeAgentFunction = inngest.createFunction(
   }
 );
 
+// Utility function to sanitize files
+// This function removes any null bytes from the file contents
 function sanitizeFiles(files: { [path: string]: string }) {
   const sanitized: { [path: string]: string } = {};
   for (const [path, content] of Object.entries(files)) {

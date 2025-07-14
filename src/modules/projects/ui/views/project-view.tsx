@@ -15,6 +15,7 @@ import { FragmentWeb } from "../components/fragment-web";
 import { CodeIcon, CrownIcon, EyeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { UserControl } from "@/components/user-control";
 
 
 interface Props {
@@ -69,6 +70,7 @@ export const ProjectView = ({ projectId }: Props) => {
                   </Link>
                 </Button>
               </div>
+              <UserControl />
             </div>
             <TabsContent value="preview">
               {!!activeFragment && <FragmentWeb data={activeFragment} />}

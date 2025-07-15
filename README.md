@@ -14,9 +14,6 @@
 	<img src="https://img.shields.io/github/languages/top/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-language-count">
 </p>
-<p align="right">
-  <img src="./public/kryft-logo-name.svg" alt="Kryft AI Logo" width="20%" style="margin: 20px 0;">
-</p>
 <p align="left">Built with the tools and technologies:</p>
 <p align="left">
 	<img src="https://img.shields.io/badge/Next.js-000000.svg?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">

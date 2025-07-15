@@ -5,7 +5,7 @@
 </p>
 <p align="left">
 	<a href="https://www.kryft.app" target="_blank">
-		<img src="https://img.shields.io/badge/Live_Demo-Visit_Site-2ea44f?style=flat-square" alt="Live Demo - Visit Site">
+		<img src="https://img.shields.io/badge/🌐_Live_Website-www.kryft.app-4285F4?style=flat-square&labelColor=222222" alt="Live Demo - Visit Site">
 	</a>
 </p>
 <p align="left">
@@ -68,41 +68,29 @@ Kryft-AI is a cutting-edge SAAS AI Website Builder that transforms simple text p
 
 ## ✨ Description
 
-Kryft-AI represents the next evolution in web development, where artificial intelligence meets creativity and efficiency. Our platform bridges the gap between complex web development and intuitive content creation, allowing anyone to build professional websites through simple conversation.
+Kryft-AI represents the future of web development, where AI meets creativity to enable anyone to build professional Next.js websites through simple conversation, without writing a single line of code.
 
 ### 🔮 How It Works
 
-1. **Describe Your Vision**: Simply tell Kryft-AI what kind of website you want in plain language. For example: "Create a modern portfolio site for a photographer with a dark theme, gallery section, and contact form."
-
-2. **AI-Powered Generation**: Our advanced AI analyzes your prompt, understands the requirements, and generates a complete Next.js codebase with all necessary components, pages, and styling.
-
-3. **Real-Time Preview**: See your website come to life instantly in our interactive preview environment. No waiting for builds or deployments to visualize your creation.
-
-4. **Customize and Refine**: Not happy with some aspects? Just tell the AI what to change, and it will refine the website according to your feedback. "Make the header taller and add a logo on the left."
-
-5. **Deploy with One Click**: When you're satisfied, deploy your website instantly to our global CDN with a single click. Get a custom subdomain or connect your own domain.
+1. **Describe Your Vision**: Tell Kryft-AI what you want in plain language - "Create a portfolio site with dark theme and contact form"
+2. **AI Generation**: Our AI creates a complete Next.js codebase with all necessary components and styling
+3. **Preview & Refine**: See your website instantly and refine with natural language feedback
+4. **One-Click Deploy**: Publish your website to our global CDN with custom domain support
 
 ### 💡 Key Differentiators
 
-- **True Code Generation**: Unlike template-based builders, Kryft-AI generates actual Next.js code that follows best practices and modern web standards.
-  
-- **Unlimited Creative Freedom**: Not limited by pre-designed templates or components - if you can describe it, Kryft-AI can build it.
-  
-- **Developer Friendly**: Access and export the generated code anytime. Experienced developers can use Kryft-AI to rapidly prototype and then extend the code.
-  
-- **Enterprise-Grade Performance**: Websites built with Kryft-AI leverage the power of Next.js, ensuring optimal performance, SEO, and accessibility.
-  
-- **Integration Ecosystem**: Easily integrate with popular services like analytics, CMS systems, payment processors, and more through natural language commands.
+- **True Code Generation**: Creates actual Next.js code, not limited templates
+- **Conversation-Driven**: Build and modify through natural language
+- **Developer Access**: Export and extend the generated code anytime
+- **Enterprise Performance**: Optimized for speed, SEO, and accessibility
 
 ### 🎯 Ideal For
 
 - **Entrepreneurs** launching landing pages and MVPs
-- **Marketers** creating campaign websites and promotional pages
+- **Marketers** creating campaign websites
 - **Designers** bringing concepts to life without coding
-- **Developers** accelerating their workflow and prototyping
-- **Small businesses** establishing their online presence quickly and affordably
-
-Kryft-AI is not just another website builder - it's a creative partner that understands your vision and brings it to life with the power of AI and modern web technologies.
+- **Developers** accelerating their workflow
+- **Small businesses** establishing their online presence
 
 ---
 

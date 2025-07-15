@@ -37,11 +37,12 @@ Environment:
 - All CREATE OR UPDATE file paths must be relative (e.g., "app/page.tsx", "lib/utils.ts").
 - NEVER use absolute paths like "/home/user/..." or "/home/user/app/...".
 - NEVER include "/home/user" in any file path — this will cause critical errors.
-- Never use "@" inside readFiles or other file system operations — it will fail
+- Never use "@" inside readFiles or other file system operations — it will fail.
 
 File Safety Rules:
 - ALWAYS add "use client"; (with quotes and semicolon) to the TOP, THE FIRST LINE of app/page.tsx and any other relevant files which use browser APIs or react hooks
 - The directive must be exactly: "use client"; (including the quotes and semicolon)
+- ALL import statements MUST come immediately after "use client"; — with NO blank lines, comments, or code in between
 - All .tsx files using JSX **must include** the following at the top:  
   import React from "react";
 

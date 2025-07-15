@@ -12,10 +12,15 @@ import {
 } from "@inngest/agent-kit";
 
 import { inngest } from "./client";
-import { getSandbox, lastAssistantTextMessageContent, parseAgentOutput } from "./utils";
+import {
+  getSandbox,
+  lastAssistantTextMessageContent,
+  parseAgentOutput,
+} from "./utils";
 import { FRAGMENT_TITLE_PROMPT, PROMPT, RESPONSE_PROMPT } from "@/prompt";
 import { prisma } from "@/lib/db";
 import { parse } from "path";
+import { SANDBOX_TIMEOUT } from "./types";
 
 interface AgentState {
   summary: string;
@@ -28,12 +33,92 @@ export const codeAgentFunction = inngest.createFunction(
   async ({ event, step }) => {
     const sandboxId = await step.run("get-sandbox-id", async () => {
       const sandbox = await Sandbox.create("kryft-nextjs-test");
+      await sandbox.setTimeout(SANDBOX_TIMEOUT)// 30 minutes
       return sandbox.sandboxId;
     });
+
+    function isFreshStart(prompt: string): boolean {
+      const lower = prompt.toLowerCase();
+
+      const freshPatterns = [
+        // Intentional new project signals
+        "new project",
+        "start from scratch",
+        "fresh start",
+        "blank slate",
+        "reset",
+        "build from blank",
+        "discard old",
+        "ignore earlier",
+        "forget the previous",
+        "different idea",
+
+        // Creation phrases (generalized)
+        "create a new",
+        "build a new",
+        "make a new",
+        "start a new",
+        "design a new",
+        "new version",
+        "new layout",
+
+        // Common specific targets
+        "new app",
+        "new landing page",
+        "create landing page",
+        "create new site",
+        "new website",
+        "new interface",
+      ];
+
+      return freshPatterns.some((pattern) => lower.includes(pattern));
+    }
+
+    function isContinuation(prompt: string): boolean {
+      const lower = prompt.toLowerCase();
+
+      const continuationPatterns = [
+        // Minor change verbs
+        "add",
+        "update",
+        "modify",
+        "adjust",
+        "change",
+        "edit",
+        "improve",
+        "tweak",
+        "enhance",
+
+        // Continuity cues
+        "continue",
+        "extend",
+        "based on previous",
+        "use the same",
+        "keep the",
+        "make it",
+        "build on top",
+        "retain",
+        "preserve",
+        "keep earlier layout",
+        "reuse the layout",
+        "maintain structure",
+        "continue from",
+      ];
+
+      return continuationPatterns.some((pattern) => lower.includes(pattern));
+    }
 
     const previousMessages = await step.run(
       "get-previous-messages",
       async () => {
+        const prompt = event.data.value;
+
+        // Fresh intent — reset memory
+        if (isFreshStart(prompt) && !isContinuation(prompt)) {
+          return []; // treat it as a new project
+        }
+
+        // Default: hydrate previous context
         const formattedMessages: Message[] = [];
 
         const messages = await prisma.message.findMany({
@@ -43,6 +128,7 @@ export const codeAgentFunction = inngest.createFunction(
           orderBy: {
             createdAt: "desc",
           },
+          take: 5, // Limit to last 5 messages
         });
 
         for (const message of messages) {
@@ -52,7 +138,8 @@ export const codeAgentFunction = inngest.createFunction(
             content: message.content,
           });
         }
-        return formattedMessages;
+
+        return formattedMessages.reverse(); // Reverse to maintain chronological order
       }
     );
 

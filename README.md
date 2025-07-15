@@ -1,7 +1,7 @@
 <div align="left">
-<p align="center">
+<h1 align="center">
   <img src="./public/kryft-logo-name.svg" alt="Kryft AI Logo" width="30%" style="margin: 20px 0;">
-</p>
+</h1>
 
 <p align="left">
 	<em><code>❯ AI-powered SAAS Website Builder that creates Next.js websites from simple text prompts</code></em>

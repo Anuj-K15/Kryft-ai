@@ -1,6 +1,5 @@
-<div align="left" style="position: relative;">
+<div align="left">
 <h1>KRYFT-AI</h1>
-<img src="./public/kryft-logo.svg" align="right" width="20%" style="margin: 30px 0 0 20px;">
 <p align="left">
 	<em><code>❯ AI-powered SAAS Website Builder that creates Next.js websites from simple text prompts</code></em>
 </p>
@@ -15,13 +14,7 @@
 	<img src="https://img.shields.io/github/languages/top/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-language-count">
 </p>
-<br clear="right">
-<br clear="right">
-
----
-
-## Built with the tools and technologies:
-
+<p align="left">Built with the tools and technologies:</p>
 <p align="left">
 	<img src="https://img.shields.io/badge/Next.js-000000.svg?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
 	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=React&logoColor=black" alt="React">
@@ -47,10 +40,11 @@
 </p>
 </div>
 
-
----
-
 ## 🔗 Table of Contents
+
+<p align="center">
+  <img src="./public/kryft-logo-name.svg" alt="Kryft AI Logo" width="20%" style="margin: 20px 0;">
+</p>
 
 - [📍 Overview](#-overview)
 - [👾 Features](#-features)
@@ -71,6 +65,44 @@
 ## 📍 Overview
 
 Kryft-AI is a cutting-edge SAAS AI Website Builder that transforms simple text prompts into fully functional Next.js websites. By leveraging advanced AI models, it enables users with little to no coding experience to create professional, responsive websites in minutes. The platform handles everything from component generation to layout design, responsive styling, and deployment - all driven by natural language descriptions. With a user-friendly interface and powerful backend technologies, Kryft-AI is revolutionizing the way websites are built. The platform is accessible at [https://www.kryft.app](https://www.kryft.app).
+
+## ✨ Description
+
+Kryft-AI represents the next evolution in web development, where artificial intelligence meets creativity and efficiency. Our platform bridges the gap between complex web development and intuitive content creation, allowing anyone to build professional websites through simple conversation.
+
+### 🔮 How It Works
+
+1. **Describe Your Vision**: Simply tell Kryft-AI what kind of website you want in plain language. For example: "Create a modern portfolio site for a photographer with a dark theme, gallery section, and contact form."
+
+2. **AI-Powered Generation**: Our advanced AI analyzes your prompt, understands the requirements, and generates a complete Next.js codebase with all necessary components, pages, and styling.
+
+3. **Real-Time Preview**: See your website come to life instantly in our interactive preview environment. No waiting for builds or deployments to visualize your creation.
+
+4. **Customize and Refine**: Not happy with some aspects? Just tell the AI what to change, and it will refine the website according to your feedback. "Make the header taller and add a logo on the left."
+
+5. **Deploy with One Click**: When you're satisfied, deploy your website instantly to our global CDN with a single click. Get a custom subdomain or connect your own domain.
+
+### 💡 Key Differentiators
+
+- **True Code Generation**: Unlike template-based builders, Kryft-AI generates actual Next.js code that follows best practices and modern web standards.
+  
+- **Unlimited Creative Freedom**: Not limited by pre-designed templates or components - if you can describe it, Kryft-AI can build it.
+  
+- **Developer Friendly**: Access and export the generated code anytime. Experienced developers can use Kryft-AI to rapidly prototype and then extend the code.
+  
+- **Enterprise-Grade Performance**: Websites built with Kryft-AI leverage the power of Next.js, ensuring optimal performance, SEO, and accessibility.
+  
+- **Integration Ecosystem**: Easily integrate with popular services like analytics, CMS systems, payment processors, and more through natural language commands.
+
+### 🎯 Ideal For
+
+- **Entrepreneurs** launching landing pages and MVPs
+- **Marketers** creating campaign websites and promotional pages
+- **Designers** bringing concepts to life without coding
+- **Developers** accelerating their workflow and prototyping
+- **Small businesses** establishing their online presence quickly and affordably
+
+Kryft-AI is not just another website builder - it's a creative partner that understands your vision and brings it to life with the power of AI and modern web technologies.
 
 ---
 

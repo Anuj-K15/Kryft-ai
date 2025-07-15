@@ -15,6 +15,8 @@
 	<img src="https://img.shields.io/github/languages/top/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-language-count">
 </p>
+<br clear="right">
+<br clear="right">
 
 ---
 

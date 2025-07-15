@@ -29,8 +29,7 @@ export const MessagesContainer = ({
         projectId: projectId,
       },
       {
-        // Temporary live
-        refetchInterval: 3000,
+        refetchInterval: 2000,
       }
     )
   );

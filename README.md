@@ -1,5 +1,5 @@
 <div align="left" style="position: relative;">
-<img src="./public/kryft-logo.svg" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<img src="./public/kryft-logo.svg" align="right" width="30%" style="margin: 30px 0 0 20px;">
 <h1>KRYFT-AI</h1>
 <p align="left">
 	<em><code>❯ AI-powered SAAS Website Builder that creates Next.js websites from simple text prompts</code></em>
@@ -15,7 +15,11 @@
 	<img src="https://img.shields.io/github/languages/top/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/Anuj-K15/Kryft-ai?style=flat-square&color=c96342" alt="repo-language-count">
 </p>
-<p align="left">Built with the tools and technologies:</p>
+
+---
+
+## Built with the tools and technologies:
+
 <p align="left">
 	<img src="https://img.shields.io/badge/Next.js-000000.svg?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
 	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat-square&logo=React&logoColor=black" alt="React">
@@ -40,7 +44,9 @@
 	<img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat-square&logo=eslint&logoColor=white" alt="ESLint">
 </p>
 </div>
-<br clear="right">
+
+
+---
 
 ## 🔗 Table of Contents
 

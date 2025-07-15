@@ -6,9 +6,6 @@ import { useTheme } from "next-themes";
 import {
   ChevronDownIcon,
   ChevronLeftIcon,
-  ChevronUpIcon,
-  EditIcon,
-  Sun,
   SunMoonIcon,
 } from "lucide-react";
 

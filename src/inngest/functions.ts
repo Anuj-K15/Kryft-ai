@@ -18,7 +18,6 @@ import {
 } from "./utils";
 import { FRAGMENT_TITLE_PROMPT, PROMPT, RESPONSE_PROMPT } from "@/prompt";
 import { prisma } from "@/lib/db";
-import { parse } from "path";
 import { SANDBOX_TIMEOUT } from "./types";
 
 interface AgentState {

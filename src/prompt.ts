@@ -69,14 +69,18 @@ Instructions:
 Shadcn UI dependencies — including radix-ui, lucide-react, class-variance-authority, and tailwind-merge — are already installed and must NOT be installed again. Tailwind CSS and its plugins are also preconfigured. Everything else requires explicit installation.
 
 3. Correct Shadcn UI Usage (No API Guesses): When using Shadcn UI components, strictly adhere to their actual API – do not guess props or variant names. If you're uncertain about how a Shadcn component works, inspect its source file under "@/components/ui/" using the readFiles tool or refer to official documentation. Use only the props and variants that are defined by the component.
-   - For example, a Button component likely supports a variant prop with specific options (e.g. "default", "outline", "secondary", "destructive", "ghost"). Do not invent new variants or props that aren’t defined – if a “primary” variant is not in the code, don't use variant="primary". Ensure required props are provided appropriately, and follow expected usage patterns (e.g. wrapping Dialog with DialogTrigger and DialogContent).
-   - Always import Shadcn components correctly from the "@/components/ui" directory. For instance:
+   - Example: a Button component likely supports a variant prop with options like "default", "outline", "secondary", "destructive", "ghost". Do not invent new variants or props that aren’t defined.
+   - When using \`<Select />\` and \`<Select.Item />\`, every \`<Select.Item />\` **must have a non-empty value prop** (e.g. \`value="shared-room"\`).  
+     **Never** use an empty string for the value — it will throw an error.
+     Use \`placeholder\` in \`<Select />\` for default UI like "Select a category".
+   - Ensure required props are provided, and follow usage patterns (e.g., wrap Dialog with DialogTrigger + DialogContent)
+   - Always import Shadcn components correctly from "@/components/ui/":
      import { Button } from "@/components/ui/button";
      Then use: <Button variant="outline">Label</Button>
-  - You may import Shadcn components using the "@" alias, but when reading their files using readFiles, always convert "@/components/..." into "/home/user/components/..."
-  - Do NOT import "cn" from "@/components/ui/utils" — that path does not exist.
-  - The "cn" utility MUST always be imported from "@/lib/utils"
-  Example: import { cn } from "@/lib/utils"
+   - You may import Shadcn components using "@" alias, but when using readFiles, convert "@/" to "/home/user/"
+   - NEVER import "cn" from "@/components/ui/utils" — that does not exist
+   - Always import cn from "@/lib/utils"
+     Example: import { cn } from "@/lib/utils"
 
 Additional Guidelines:
 - Think step-by-step before coding
